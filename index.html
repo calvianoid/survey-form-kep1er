@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form - KEP1ER</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">KEP1ER Survey Form</h1>
+    <p id="description">Please fill in the survey carefully. Thank You.</p>
+
+    <form action="" id="survey-form">
+      <div id="form-group">
+        <label id="name-label" for="name">
+          Name
+          <input type="text" id="name" placeholder="Enter Your Name" required />
+        </label>
+      </div>
+
+      <div id="form-group">
+        <label id="email-label" for="email">
+          Email
+          <input type="email" id="email" placeholder="Enter Your Email" required />
+        </label>
+      </div>
+
+      <div id="form-group">
+        <label id="number-label" for="age">
+          Age
+          <input type="number" id="number" placeholder="How old are you?" maxlength="10" min="15" max="50" required />
+        </label>
+      </div>
+
+      <div id="form-group">
+        <label>How do you know Kep1er:</label>
+        <select name="cars" id="dropdown">
+          <option value="1">Girls Planet 999</option>
+          <option value="2">Social Media</option>
+          <option value="3">Friend</option>
+          <option value="4">Youtube</option>
+        </select>
+      </div>
+
+      <div id="form-group" class="input-radio">
+        <label>Choose your favorite member :</label><br />
+        <input type="radio" id="member1" name="fav_language" value="HTML" />
+        <label for="member1">Choi Yujin</label><br />
+        <input type="radio" id="member2" name="fav_language" value="HTML" />
+        <label for="member2">Shen Xiaoting</label><br />
+        <input type="radio" id="member3" name="fav_language" value="HTML" />
+        <label for="member3">Sakamoto Mashiro</label><br />
+        <input type="radio" id="member4" name="fav_language" value="HTML" />
+        <label for="member4">Kim Chaehyun</label><br />
+        <input type="radio" id="member5" name="fav_language" value="HTML" />
+        <label for="member5">Kim Dayeon</label><br />
+        <input type="radio" id="member6" name="fav_language" value="HTML" />
+        <label for="member6">Ezaki Hikaru</label><br />
+        <input type="radio" id="member7" name="fav_language" value="HTML" />
+        <label for="member7">Huening Bahiyyih</label><br />
+        <input type="radio" id="member8" name="fav_language" value="HTML" />
+        <label for="member8">Seo Youngeun</label><br />
+        <input type="radio" id="member9" name="fav_language" value="HTML" />
+        <label for="member9">Kang Yeseon</label><br />
+      </div>
+
+      <div id="form-group-checkbox" class="input-checkbox">
+        <label for="html">Choose your favorite song(s) :</label><br />
+        <input type="checkbox" id="song1" name="song" value="Bike" />
+        <label for="song1"> O.O.O</label><br />
+        <input type="checkbox" id="song2" name="song" value="Bike" />
+        <label for="song2"> Wa Da Da</label><br />
+        <input type="checkbox" id="song3" name="song" value="Bike" />
+        <label for="song3"> Shine</label><br />
+        <input type="checkbox" id="song4" name="song" value="Bike" />
+        <label for="song4"> Another Dream</label><br />
+      </div>
+
+      <div class="form-group">
+        <br /><label>Any comments or suggestions?</label>
+        <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+
+      <div id="form-group">
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
